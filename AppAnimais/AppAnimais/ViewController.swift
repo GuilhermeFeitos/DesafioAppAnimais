@@ -11,11 +11,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myTableView: UITableView!
     
-    private let animals: [Animal] = [.init(nameImage: "peixes.png", title: "Peixes"),
-                                     .init(nameImage: "anfibios.png", title: "Anfíbios"),
-                                     .init(nameImage: "repteis.png", title: "Répteis"),
-                                     .init(nameImage: "aves.png", title: "Aves"),
-                                     .init(nameImage: "mamiferos.png", title: "Mamíferos")   ]
+    private let animals: [Animal] = [.init(nameImage: "peixes.jpg", title: "Peixes"),
+                                     .init(nameImage: "anfibios.jpg", title: "Anfíbios"),
+                                     .init(nameImage: "repteis.jpg", title: "Répteis"),
+                                     .init(nameImage: "aves.jpg", title: "Aves"),
+                                     .init(nameImage: "mamiferos.jpg", title: "Mamíferos")   ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
