@@ -34,12 +34,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         myTableView.delegate = self
         myTableView.dataSource = self
+       // myTableView.backgroundColor = UIColor(red: 124/255, green: 116/255, blue: 0/255, alpha: 1.0)
         myTableView.tableFooterView = .init(frame: .zero)
-        
         
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            
+        return 60
+        
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -49,12 +53,21 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell1", for: indexPath)
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "AnimalCustomTableViewCell", for: indexPath) as? AnimalCustomTableViewCell {
+            
+            cell.setup(with: animals[indexPath.row])
+            return cell
+        }
         
-        return cell
+        return UITableViewCell()
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let classeSelecionada = animals[indexPath.row].title
+        print(classeSelecionada)
+        
+    }
     
     
 }
