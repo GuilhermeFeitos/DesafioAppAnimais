@@ -16,6 +16,7 @@
 		D054898026E7DB60001DD123 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D054897F26E7DB60001DD123 /* Animal.swift */; };
 		D054898326E7DE90001DD123 /* AnimalCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D054898226E7DE90001DD123 /* AnimalCustomTableViewCell.swift */; };
 		D054898626E7E370001DD123 /* SegundaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D054898526E7E370001DD123 /* SegundaViewController.swift */; };
+		D054898C26E7F2C4001DD123 /* AnimalCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D054898B26E7F2C4001DD123 /* AnimalCustomCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D054897F26E7DB60001DD123 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		D054898226E7DE90001DD123 /* AnimalCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCustomTableViewCell.swift; sourceTree = "<group>"; };
 		D054898526E7E370001DD123 /* SegundaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaViewController.swift; sourceTree = "<group>"; };
+		D054898B26E7F2C4001DD123 /* AnimalCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCustomCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				D054897F26E7DB60001DD123 /* Animal.swift */,
 				D054898226E7DE90001DD123 /* AnimalCustomTableViewCell.swift */,
 				D054898526E7E370001DD123 /* SegundaViewController.swift */,
+				D054898B26E7F2C4001DD123 /* AnimalCustomCollectionViewCell.swift */,
 			);
 			path = AppAnimais;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D054896B26E7D71C001DD123 /* ViewController.swift in Sources */,
+				D054898C26E7F2C4001DD123 /* AnimalCustomCollectionViewCell.swift in Sources */,
 				D054898026E7DB60001DD123 /* Animal.swift in Sources */,
 				D054896726E7D71C001DD123 /* AppDelegate.swift in Sources */,
 				D054896926E7D71C001DD123 /* SceneDelegate.swift in Sources */,

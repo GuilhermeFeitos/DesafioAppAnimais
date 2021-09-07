@@ -11,12 +11,12 @@ import Foundation
 class Animal {
     
     let nameImage: String
-    let title: String
+    let titleAnimal: String
     
-    init(nameImage: String, title: String) {
+    init(nameImage: String, titleAnimal: String) {
         
         self.nameImage = nameImage
-        self.title = title
+        self.titleAnimal = titleAnimal
         
     }
     

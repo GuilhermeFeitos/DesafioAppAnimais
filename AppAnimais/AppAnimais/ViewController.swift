@@ -11,11 +11,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myTableView: UITableView!
     
-    private let animals: [Animal] = [.init(nameImage: "peixes.jpg", title: "Peixes"),
-                                     .init(nameImage: "anfibios.jpg", title: "Anfíbios"),
-                                     .init(nameImage: "repteis.jpg", title: "Répteis"),
-                                     .init(nameImage: "aves.jpg", title: "Aves"),
-                                     .init(nameImage: "mamiferos.jpg", title: "Mamíferos")   ]
+    private let animals: [Animal] =
+        [.init(nameImage: "peixes.jpg", titleAnimal: "Peixes"),
+         .init(nameImage: "anfibios.jpg", titleAnimal: "Anfíbios"),
+         .init(nameImage: "repteis.jpg", titleAnimal: "Répteis"),
+         .init(nameImage: "aves.jpg", titleAnimal: "Aves"),
+         .init(nameImage: "mamiferos.jpg", titleAnimal: "Mamíferos")]
+    
+        
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,12 +32,11 @@ class ViewController: UIViewController {
 
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
-    
+        
     private func setupTableView(){
         
         myTableView.delegate = self
         myTableView.dataSource = self
-       // myTableView.backgroundColor = UIColor(red: 124/255, green: 116/255, blue: 0/255, alpha: 1.0)
         myTableView.tableFooterView = .init(frame: .zero)
         
     }
@@ -64,10 +66,33 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let classeSelecionada = animals[indexPath.row].title
+        
+        let classeSelecionada = animals[indexPath.row].titleAnimal
         print(classeSelecionada)
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+        if segue.identifier == "segundaView" {
+           
+            if let segundaViewController = segue.destination as? SegundaViewController {
+                
+                if let cell = sender as? AnimalCustomTableViewCell {
+                    
+                    
+                    segundaViewController.tituloTela = cell.myLabel.text
+
+                }
+                
+                
+            }
+        
+       
+        }
+        
+    }
     
 }
+

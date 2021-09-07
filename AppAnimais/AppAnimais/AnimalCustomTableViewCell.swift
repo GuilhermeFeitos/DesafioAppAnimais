@@ -14,10 +14,11 @@ class AnimalCustomTableViewCell: UITableViewCell {
     
     
     
+    
     public func setup(with animal: Animal) {
         
         myImage.image = UIImage(named: animal.nameImage)
-        myLabel.text = animal.title
+        myLabel.text = animal.titleAnimal
         
     }
 
