@@ -85,13 +85,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                     segundaViewController.tituloTela = cell.myLabel.text
 
                 }
-                
-                
             }
-        
-       
         }
-        
     }
     
 }
