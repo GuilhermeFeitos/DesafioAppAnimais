@@ -81,13 +81,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                 
                 if let cell = sender as? AnimalCustomTableViewCell {
                     
-                    
                     segundaViewController.tituloTela = cell.myLabel.text
 
                 }
             }
         }
     }
+    
+    
+    
     
 }
 
